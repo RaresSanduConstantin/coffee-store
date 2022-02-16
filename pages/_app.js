@@ -1,12 +1,13 @@
 import '../styles/globals.css';
+import Link from 'next/link';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Component {...pageProps} />
-      <footer>
-        <p>2022 Coffee Stores</p>
-      </footer>
+      <Link href='/'>
+        <a>Go to main page</a>
+      </Link>
     </>
   );
 }
